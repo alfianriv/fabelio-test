@@ -38,6 +38,7 @@ const Detail = ({ product, comments }) => {
 		if (!resp.success) {
 			return message.error(resp.message);
 		}
+		form.setFieldsValue({comment: ""})
 		setDataComments([resp.data, ...dataComments]);
 	};
 
