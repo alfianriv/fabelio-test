@@ -39,7 +39,6 @@ const Home = () => {
 		headers: {
 			Accept: "application/json",
 			"Content-Type": "application/json",
-			"Authorization": data.profile.token
 		},
 		method: "POST",
 		body: JSON.stringify(data)
